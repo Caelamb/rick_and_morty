@@ -1,0 +1,44 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .navTitle {
+    margin: 0;
+  }
+  
+  .navButton {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .navSearch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navSearch input[type="text"] {
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-align: center; /* Para centrar el texto del input */
+  }
+  
+  .navSearch button {
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px; /* Para separar el botón del input */
+  }
+  

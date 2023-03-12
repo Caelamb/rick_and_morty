@@ -1,0 +1,41 @@
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.attribute {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: bold;
+}
