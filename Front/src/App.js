@@ -4,7 +4,8 @@ import Nav from './components/searchbar/Nav'
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from './components/About/About';
-import Detail from './components/Detail/Detail'; 
+import Detail from './components/Detail/Detail';
+import Favorites from "./components/Favorites"
 
 function App () {
   const [characters, setCharacters] = React.useState([]);
@@ -52,6 +53,7 @@ const onClose = (index) => {
        <Route path='/About' element={<About />} />
        <Route path='/Detail/:detailId' element={<Detail />} />
        <Route path='/home' element= {<Cards characters={characters} onClose={onClose} />}/>
+       <Route path='/Favorites' element={<Favorites />} />
       </Routes>
       </div>
   )

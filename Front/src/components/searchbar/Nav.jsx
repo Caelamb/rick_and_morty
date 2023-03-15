@@ -1,8 +1,9 @@
 import SearchBar from '../searchbar/SearchBar';
 import styles from './Nav.module.css';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export default function Nav({ onSearch }) {
+function Nav({ onSearch, myFavorites }) {
   return (
     <nav className={styles.navContainer}>
       <h1 className={styles.navTitle}>Rick and Morty App</h1>
@@ -13,8 +14,19 @@ export default function Nav({ onSearch }) {
         <NavLink to="/home">
           <button>Home</button>
         </NavLink>
+        <NavLink to="/Favorites">
+          <button>Favorites</button>
+        </NavLink>
         <SearchBar onSearch={onSearch} />
       </div>
     </nav>
   );
 }
+
+function mapStateToProps(state) {
+  return {
+    myFavorites: state.myFavorites,
+  };
+}
+
+export default connect(mapStateToProps)(Nav);
