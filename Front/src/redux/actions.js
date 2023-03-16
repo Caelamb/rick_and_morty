@@ -1,3 +1,4 @@
+
 // actions.js
 
 export const addToFavorites = character => {
@@ -13,3 +14,18 @@ export const addToFavorites = character => {
       payload: id
     };
   };
+
+  export const filterCards = (gender) => {
+    return {
+      type: "FILTER",
+      payload: gender
+    }
+  }
+  
+  // Action-creator orderCards
+  export const orderCards = (id) => {
+    return {
+      type: "ORDER",
+      payload: id
+    }
+  }

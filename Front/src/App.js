@@ -5,7 +5,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
-import Favorites from "./components/Favorites"
+import Favorites from "./components/Favorites/Favorites"
 
 function App () {
   const [characters, setCharacters] = React.useState([]);
